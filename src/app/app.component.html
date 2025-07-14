@@ -1,0 +1,23 @@
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a routerLink="/home" class="nav-link">🏠 Home</a>
+    <a routerLink="/about" class="nav-link">ℹ️ About</a>
+    <ng-container *ngIf="!authService.isAuthenticated()">
+      <a routerLink="/login" class="nav-link">🔐 Sign In</a>
+      <a routerLink="/register" class="nav-link">📝 Register</a>
+    </ng-container>
+    <ng-container *ngIf="authService.isAuthenticated()">
+      <a (click)="logout()" class="nav-link">🚪 Logout</a>
+    </ng-container>
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <p>© 2025 Product-Inventory. All rights reserved.</p>
+</footer>

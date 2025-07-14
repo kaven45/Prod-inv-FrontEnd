@@ -1,0 +1,304 @@
+/* Center align the heading */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Search box styling */
+.search-box {
+  width: 50%;
+  padding: 12px;
+  margin: 15px auto;
+  display: block;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box:focus {
+  border-color: #00d9ff;
+  box-shadow: 0 4px 8px rgba(0, 217, 255, 0.3);
+}
+
+/* Container for the table */
+.table-container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e3f2fd, #f1f8ff);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header styles with gradient */
+.table thead {
+  background: linear-gradient(to right, #007bff, #00d9ff);
+  color: white;
+  font-size: 16px;
+}
+
+/* Row hover effect */
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Buttons inside table */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* View Button */
+.btn-view {
+  background: linear-gradient(to right, #28a745, #34d058);
+  color: white;
+}
+
+.btn-view:hover {
+  background: linear-gradient(to right, #218838, #28a745);
+  transform: translateY(-2px);
+}
+
+/* Edit Button */
+.btn-edit {
+  background: linear-gradient(to right, #ffc107, #ffdf7e);
+  color: black;
+}
+
+.btn-edit:hover {
+  background: linear-gradient(to right, #e0a800, #ffc107);
+  transform: translateY(-2px);
+}
+
+/* Delete Button */
+.btn-delete {
+  background: linear-gradient(to right, #dc3545, #f65c75);
+  color: white;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(to right, #c82333, #dc3545);
+  transform: translateY(-2px);
+}
+
+/* Add Product Button */
+.add-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-add {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #17a2b8, #00d9ff);
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(23, 162, 184, 0.3);
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: linear-gradient(to right, #138496, #17a2b8);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+
+  .table th,
+  .table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+
+  .action-buttons button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+/* Container for the table
+.table-container {
+  width:800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e3f2fd, #f1f8ff);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+} */
+
+/* Table styles */
+/* .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+} */
+
+/* Header styles with gradient to match navbar */
+/* .table thead {
+  background: linear-gradient(to right, #007bff, #00d9ff);
+  color: white;
+  font-size: 16px;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+} */
+
+/* Buttons inside table */
+/* .action-buttons button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* View Button */
+/* .btn-view {
+  background: linear-gradient(to right, #28a745, #34d058);
+  color: white;
+}
+
+.btn-view:hover {
+  background: linear-gradient(to right, #218838, #28a745);
+  transform: translateY(-2px);
+} */
+
+/* Edit Button */
+/* .btn-edit {
+  background: linear-gradient(to right, #ffc107, #ffdf7e);
+  color: black;
+}
+
+.btn-edit:hover {
+  background: linear-gradient(to right, #e0a800, #ffc107);
+  transform: translateY(-2px);
+} */
+
+/* Delete Button */
+/* .btn-delete {
+  background: linear-gradient(to right, #dc3545, #f65c75);
+  color: white;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(to right, #c82333, #dc3545);
+  transform: translateY(-2px);
+} */
+
+/* Add Product Button */
+/* .add-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-add {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #17a2b8, #00d9ff);
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(23, 162, 184, 0.3);;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: linear-gradient(to right, #138496, #17a2b8);
+  transform: translateY(-3px);
+} */
+
+/* Media query for responsiveness */
+/* @media (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+} */

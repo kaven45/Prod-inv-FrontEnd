@@ -1,0 +1,74 @@
+<div class="form-container">
+  <h2 class="text-center">✏️ Edit Product Details</h2>
+  <form class="form" (ngSubmit)="updateProduct()">
+    <div class="form-row">
+      <!-- Left Column -->
+      <div class="form-group">
+        <label for="name">🏷️ <strong>Product Name:</strong></label>
+        <input
+          type="text"
+          id="name"
+          [(ngModel)]="product.name"
+          name="name"
+          placeholder="Enter product name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="manufacturer">🏭 <strong>Manufacturer:</strong></label>
+        <input
+          type="text"
+          id="manufacturer"
+          [(ngModel)]="product.manufacturer"
+          name="manufacturer"
+          placeholder="Enter manufacturer name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="price">💰 <strong>Price:</strong></label>
+        <input
+          type="number"
+          id="price"
+          [(ngModel)]="product.price"
+          name="price"
+          placeholder="Enter product price"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-row-1">
+      <!-- Right Column -->
+      <div class="form-group">
+        <label for="description">📝 <strong>Description:</strong></label>
+        <input
+          type="text"
+          id="description"
+          [(ngModel)]="product.description"
+          name="description"
+          placeholder="Enter product description"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">📦 <strong>Quantity:</strong></label>
+        <input
+          type="number"
+          id="quantity"
+          [(ngModel)]="product.quantity"
+          name="quantity"
+          placeholder="Enter product quantity"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn-update">✅ Update Product</button>
+    <button type="button" class="btn-cancel" (click)="onCancel()">Cancel</button>
+  </form>
+</div>

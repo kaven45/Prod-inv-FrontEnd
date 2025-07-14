@@ -1,0 +1,54 @@
+<h2 class="text-center mt-4">Product List</h2>
+
+<!-- Search Bar -->
+<div class="search-container mb-3">
+  <input
+    type="text"
+    [(ngModel)]="searchQuery"
+    (input)="searchProducts()"
+    placeholder="🔍 Search for products..."
+    class="search-bar form-control"
+  />
+</div>
+
+<!-- Product Table -->
+<div class="table-container">
+  <table class="table table-hover shadow-lg rounded">
+    <thead>
+      <tr>
+        <th>Prouduct ID</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Display filtered products -->
+      <tr *ngFor="let product of filteredProducts" class="table-row">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td class="action-buttons">
+          <a [routerLink]="['/view-product', product.id]">
+            <button class="btn btn-view">👁️ View</button>
+          </a>
+          <a [routerLink]="['/edit-product', product.id]">
+            <button class="btn btn-edit">✏️ Edit</button>
+          </a>
+          <button class="btn btn-delete" (click)="deleteProduct(product.id)">
+            🗑️ Delete
+          </button>
+        </td>
+      </tr>
+      <!-- No products found message -->
+      <tr *ngIf="filteredProducts.length === 0">
+        <td colspan="3" class="text-center">No products found!</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Add Product Button -->
+<div class="add-btn-container mt-4 text-center">
+  <a [routerLink]="['/add-product']">
+    <button class="btn btn-add btn-primary">Add Product</button>
+  </a>
+</div>
